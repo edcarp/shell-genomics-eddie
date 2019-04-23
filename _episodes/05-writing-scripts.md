@@ -275,19 +275,18 @@ download the page instead of showing it to us **and** specifies that it should s
 file using the same name it had on the server: species_EnsemblBacteria.txt
 
 It's important to note that both ``curl`` and ``wget`` download to the computer that the
-command line belongs to. So, if you are logged into AWS on the command line and execute
-the ``curl`` command above in the AWS terminal, the file will be downloaded to your AWS
-machine, not your local one.
+command line belongs to. So, if you are logged into Eddie on the command line and execute
+the ``curl`` command above in the terminal, the file will be downloaded to Eddie, not your local one.
 
-### Moving files between your laptop and your instance
+### Moving files between your laptop/desktop and Eddie
 
 What if the data you need is on your local computer, but you need to get it *into* the
-cloud? There are also several ways to do this, but it's *always* easier
+Eddie? There are also several ways to do this, but it's *always* easier
 to start the transfer locally. **This means if you're typing into a terminal, the terminal
-should not be logged into your instance, it should be showing your local computer. If you're
-using a transfer program, it needs to be installed on your local machine, not your instance.**
+should not be logged into Eddie, it should be showing your local computer. If you're
+using a transfer program, it needs to be installed on your local machine.**
 
-## Transferring Data Between your Local Machine and the Cloud
+## Transferring Data Between your Local Machine and Eddie
 ### scp
 
 `scp` stands for 'secure copy protocol', and is a widely used UNIX tool for moving files
@@ -303,29 +302,29 @@ Note that you are always running `scp` locally, but that *doesn't* mean that
 you can only move files from your local computer. A command like:
 
 ~~~
-$ scp <local file> <AWS instance>
+$ scp <local file> <Eddie>
 ~~~
 {: .bash}
 
 To move it back, you just re-order the to and from fields:
 
 ~~~
-$ scp <AWS instance> <local file>
+$ scp <Eddie> <local file>
 ~~~
 {: .bash}
 
-#### Uploading Data to your Virtual Machine with scp
+#### Uploading Data to Eddie with scp
 
-1. Open the terminal and use the `scp` command to upload a file (e.g. local_file.txt) to the dcuser home directory:
+1. Open the terminal and use the `scp` command to upload a file (e.g. `local_file.txt`) to the dcuser home directory:
 
 ~~~
-$  scp local_file.txt dcuser@ip.address:/home/dcuser/
+$  scp local_file.txt <username>@eddie3.ecdf.ed.ac.uk:/home/<username>/
 ~~~
 {: .bash}
 
-#### Downloading Data from your Virtual Machine with scp
+#### Downloading Data from Eddie with scp
 
-Let's download a text file from our remote machine. You should have a file that contains bad reads called ~/shell_data/scripted_bad_reads.txt.
+Let's download a text file from Eddie. You should have a file that contains bad reads called `~/shell_data/scripted_bad_reads.txt`.
 
 **Tip:** If you are looking for another (or any really) text file in your home directory to use instead try
 
@@ -335,10 +334,10 @@ $ find ~ -name *.txt
 {: .bash}
 
 
-1. Download the bad reads file in ~/shell_data/scripted_bad_reads.txt to your home ~/Download directory using the following command **(make sure you use substitute dcuser@ ip.address with your remote login credentials)**:
+1. Download the bad reads file in `~/shell_data/scripted_bad_reads.txt` to your home `~/Downloads` directory using the following command:
 
 ~~~
-$ scp dcuser@ip.address:/home/dcuser/shell_data/untrimmed_fastq/scripted_bad_reads.txt. ~/Downloads
+$ scp <username>@eddie3.ecdf.ed.ac.uk:/home/<username>/shell_data/untrimmed_fastq/scripted_bad_reads.txt. ~/Downloads
 ~~~
 {: .bash}
 
@@ -374,7 +373,7 @@ go to your start menu/search enter the term **'cmd'**; you will be able to start
 5. Locate a file on your computer that you wish to upload (be sure you know the path). Then upload it to your remote machine **(you will need to know your ip address, and login credentials)**. You will be prompted to enter a password, and then your upload will begin. **(make sure you use substitute 'your-pc-username' for your actual pc username)**
 
 ~~~
-C:\User\your-pc-username\Downloads> pscp.exe local_file.txt dcuser@ip.address:/home/dcuser/
+C:\User\your-pc-username\Downloads> pscp.exe local_file.txt <username>@eddie3.ecdf.ed.ac.uk:/home/<username>/
 ~~~
 {: .bash}
 
@@ -384,7 +383,7 @@ C:\User\your-pc-username\Downloads> pscp.exe local_file.txt dcuser@ip.address:/h
 2. Download the text file using the following command **(make sure you use substitute 'your-pc-username' for your actual pc username and dcuser@ ip.address with your remote login credentials)**
 
 ~~~
-C:\User\your-pc-username\Downloads> pscp.exe dcuser@ip.address:/home/dcuser/shell_data/untrimmed_fastq/scripted_bad_reads.txt.
+C:\User\your-pc-username\Downloads> pscp.exe <username>@eddie3.ecdf.ed.ac.uk:/home/<username>/shell_data/untrimmed_fastq/scripted_bad_reads.txt.
 
 C:\User\your-pc-username\Downloads
 ~~~
