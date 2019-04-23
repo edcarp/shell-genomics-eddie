@@ -87,7 +87,7 @@ Lists every file in `/usr/bin` that ends in the characters `.sh`.
 > The root directory is the highest level directory in your file system and contains
 > files that are important for your computer to perform its daily work, but which you usually won't
 > have to interact with directly. In our case,
-> the root directory is two levels above our home directory, so `cd` or `cd ~` will take you to `/home/dcuser`
+> the root directory is two levels above our home directory, so `cd` or `cd ~` will take you to `/home/<username>`
 > and `cd /` will take you to `/`, which is equivalent to `~/../../`. Try not to worry if this is confusing,
 > it will all become clearer with practice.
 > 
@@ -534,7 +534,7 @@ $ ls -l
 {: .bash}
 
 ~~~
--rw-r--r-- 1 dcuser dcuser 43332 Nov 15 23:02 SRR098026-backup.fastq
+-rw-r--r-- 1 username username 43332 Nov 15 23:02 SRR098026-backup.fastq
 ~~~
 {: .output}
 
@@ -560,7 +560,7 @@ $ ls -l
 {: .bash}
 
 ~~~
--r--r--r-- 1 dcuser dcuser 43332 Nov 15 23:02 SRR098026-backup.fastq
+-r--r--r-- 1 username username 43332 Nov 15 23:02 SRR098026-backup.fastq
 ~~~
 {: .output}
 
@@ -620,8 +620,8 @@ you will be asked whether you want to override your permission settings.
 > > It's always a good idea to check your work with `ls -l backup`. You should see something like: 
 > > 
 > > ~~~
-> > -r--r--r-- 1 dcuser dcuser 47552 Nov 15 23:06 SRR097977-backup.fastq
-> > -r--r--r-- 1 dcuser dcuser 43332 Nov 15 23:06 SRR098026-backup.fastq
+> > -r--r--r-- 1 username username 47552 Nov 15 23:06 SRR097977-backup.fastq
+> > -r--r--r-- 1 username username 43332 Nov 15 23:06 SRR098026-backup.fastq
 > > ~~~
 > > {: .output}
 > {: .solution}
