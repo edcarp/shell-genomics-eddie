@@ -133,15 +133,14 @@ Several commands are frequently used to create, inspect, rename, and delete file
 > other helpful information you want to know about).  This is up to you!  
 {: .callout}
 
+At the bottom left of the screen you should see something like:
 ~~~
-$
+[<username>@login03(eddie) ~]$
 ~~~
 {: .bash}
 
-The dollar sign is a **prompt**, which shows us that the shell is waiting for input;
-your shell may use a different character as a prompt and may add information before
-the prompt. When typing commands, either from these lessons or from other sources,
-do not type the prompt, only the commands that follow it.
+where `<username>` will be replaced with your own username. This is a **prompt**, which shows us that the shell is waiting for input. (Shells on other systems may use a different character as a prompt and may contain more or less information before
+the prompt.) In the examples in these lessons, we show just the dollar sign to indicate the prompt. When typing commands, either from these lessons or from other sources, do not type the prompt, only the commands that follow it.
 
 Let's find out where we are by running a command called `pwd`
 (which stands for "print working directory").
