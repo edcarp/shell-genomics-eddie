@@ -157,7 +157,7 @@ the directory that the computer assumes we want to run commands in
 unless we explicitly specify something else.
 Here,
 the computer's response is `/home/<username>`,
-where you will see your own username instead of `<username>`. This is your home directory within on Eddie:
+where you will see your own username instead of `<username>`. This is your home directory on Eddie:
 
 ~~~
 $ pwd
