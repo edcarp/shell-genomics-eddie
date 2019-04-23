@@ -51,50 +51,57 @@ In this lesson you will learn how to use the command line interface to move arou
 ## How to access the shell
 
 On a Mac or Linux machine, you can access a shell through a program called Terminal, which is already available
-on your computer. If you're using Windows, you'll need to download a separate program to access the shell.
+on your computer. If you're using Windows, you'll need to download a separate program to access the shell. On The University's Windows supported desktop, the recommended program is MobaXterm, which is already installed.
 
 We will spend most of our time learning about the basics of the shell
 by manipulating some experimental data. Some of the data we're going to be working with is quite large, and
 we're also going to be using several bioinformatics packages in later
 lessons to work with this data. To avoid having to spend time 
 downloading the data and downloading and installing all of the software,
-we're going to be working with data on a remote server. 
+we're going to be working with data on the University's compute cluster, Eddie. 
+
+Some sort of login instructions for Linux, Mac and Windows including username and password...
+
+Some note of different home directories to prevent us from accidentally changing each other's files as we work through the
+exercises
 
 You can log-in to the remote server using the instructions 
 [here](http://www.datacarpentry.org/cloud-genomics/02-logging-onto-cloud/#logging-onto-a-cloud-instance). 
 Your instructor will supply the `ip_address` and password that you need to login.
 
-Each of you will have a different `ip_address`. This will 
-prevent us from accidentally changing each other's files as we work through the
-exercises. The password will be the same for everyone. 
-
 After logging in, you will see a screen showing something like this: 
 
 ~~~
-Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.13.0-48-generic x86_64)
+         _______    _     _ _       
+        (_______)  | |   | (_)      
+         _____   _ | | _ | |_  ____ 
+        |  ___) / || |/ || | |/ _  )
+        | |____( (_| ( (_| | ( (/ / 
+        |_______)____|\____|_|\____)
+                            
 
- * Documentation:  https://help.ubuntu.com/
+             WELCOME TO Eddie3
 
-  System information as of Sat Feb  2 00:08:17 UTC 2019
+             www.ecdf.ed.ac.uk
+_____________________________________________________________________
 
-  System load: 0.0                Memory usage: 5%   Processes:       82
-  Usage of /:  29.9% of 98.30GB   Swap usage:   0%   Users logged in: 0
+New service: GitLab
 
-  Graph this data and manage this system at:
-    https://landscape.canonical.com/
+Details can be found at:
+https://www.wiki.ed.ac.uk/display/ResearchServices/Version+Control+Services
 
-  Get cloud support with Ubuntu Advantage Cloud Guest:
-    http://www.ubuntu.com/business/services/cloud
+The service is at:
+https://git.ecdf.ed.ac.uk/
+_____________________________________________________________________
 
-597 packages can be updated.
-444 updates are security updates.
+A guide to getting started is available here:
+https://www.wiki.ed.ac.uk/display/ResearchServices/Quickstart
 
-New release '16.04.5 LTS' available.
-Run 'do-release-upgrade' to upgrade to it.
+Service documentation is here:
+https://www.wiki.ed.ac.uk/display/ResearchServices/Eddie
 
-
-Last login: Fri Feb  1 22:34:53 2019 from c-73-116-43-163.hsd1.ca.comcast.net
-~~~
+Please report any issues to IS.Helpline@ed.ac.uk
+_____________________________________________________________________~~~
 {: .output}
 
 This provides a lot of information about the remote server that you're logging in to. We're not going to use most of this information for
@@ -148,8 +155,8 @@ i.e.,
 the directory that the computer assumes we want to run commands in
 unless we explicitly specify something else.
 Here,
-the computer's response is `/home/dcuser`,
-which is the top level directory within our cloud system:
+the computer's response is `/home/<username>`,
+where you will see your own username instead of `<username>`. This is your home directory within on Eddie:
 
 ~~~
 $ pwd
@@ -157,13 +164,13 @@ $ pwd
 {: .bash}
 
 ~~~
-/home/dcuser
+/home/<username>
 ~~~
 {: .output}
 
 Let's look at how our file system is organized.  
 
-At the top is our `dcuser` directory, which holds all the 
+At the top is our home directory, which holds all our  
 subdirectories and files.
 
 Inside that directory there is the following:
