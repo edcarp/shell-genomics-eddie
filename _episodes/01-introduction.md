@@ -165,7 +165,7 @@ $ cp -r /exports/eddie/scratch/shell_data/ .
 
 Now, let's look at how our file system is organized.  
 
-At the top is our home directory, which holds all our  
+At the top is our home directory, `/home/<username>`, which holds all our  
 subdirectories and files.
 
 Inside that directory there is the following:
