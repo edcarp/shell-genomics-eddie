@@ -286,6 +286,7 @@ to start the transfer locally. **This means if you're typing into a terminal, th
 should not be logged into Eddie, it should be showing your local computer. If you're
 using a transfer program, it needs to be installed on your local machine.**
 
+<div id="div_aws_unix" style="display:block" markdown="1">
 ## Transferring Data Between your Local Machine and Eddie
 ### scp
 
@@ -393,4 +394,4 @@ C:\User\your-pc-username\Downloads
 
 
 
-<div id="div_aws_unix" style="display:block" markdown="1">
+
