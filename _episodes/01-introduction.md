@@ -100,7 +100,7 @@ _____________________________________________________________________
 ~~~
 {: .output}
 
-This provides a lot of information about the remote server that you're logging in to. We're not going to use most of this information for
+This provides some information and links to documentation on using Eddie. We're not going to use most of this information for
 our workshop, so you can clear your screen using the `clear` command. 
 
 ~~~
