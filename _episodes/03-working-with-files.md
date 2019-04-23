@@ -74,7 +74,8 @@ $ ls /usr/bin/*.sh
 {: .bash}
 
 ~~~
-/usr/bin/amuFormat.sh  /usr/bin/gettext.sh  /usr/bin/gvmap.sh
+/usr/bin/build-progress.sh  /usr/bin/gettext.sh             /usr/bin/lesspipe.sh  /usr/bin/setup-nsssysinit.sh  /usr/bin/unix-lpr.sh
+/usr/bin/fix-include.sh     /usr/bin/gflags_completions.sh  /usr/bin/lprsetup.sh  /usr/bin/struct2osd.sh
 ~~~
 {: .output}
 
