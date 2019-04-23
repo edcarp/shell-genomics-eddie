@@ -231,10 +231,10 @@ You will see:
 {: .output}
 
 This is the full name of your home directory. This tells you that you
-are in a directory called `dcuser`, which sits inside a directory called
+are in a directory called `<username>`, which sits inside a directory called
 `home` which sits inside the very top directory in the hierarchy. The
 very top of the hierarchy is a directory called `/` which is usually
-referred to as the *root directory*. So, to summarize: `dcuser` is a
+referred to as the *root directory*. So, to summarize: `<username>` is a
 directory in `home` which is a directory in `/`.
 
 Now enter the following command:
