@@ -340,7 +340,10 @@ $ pw<tab><tab>
 {: .bash}
 
 ~~~
-pwd         pwd_mkdb    pwhich      pwhich5.16  pwhich5.18  pwpolicy
+pw.x              pw4gww.x          pwconv            pwi2xsf.x         pwunconv
+pw2bgw.x          pw_export.x       pwd               pwmake            
+pw2gw.x           pwck              pwdx              pwritxnt          
+pw2wannier90.x    pwcond.x          pwhistory_helper  pwscore      
 ~~~
 {: .output}
 
