@@ -101,7 +101,8 @@ Service documentation is here:
 https://www.wiki.ed.ac.uk/display/ResearchServices/Eddie
 
 Please report any issues to IS.Helpline@ed.ac.uk
-_____________________________________________________________________~~~
+_____________________________________________________________________
+~~~
 {: .output}
 
 This provides a lot of information about the remote server that you're logging in to. We're not going to use most of this information for
