@@ -302,11 +302,16 @@ the ``curl`` command above in the terminal, the file will be downloaded to Eddie
 
 ### Moving files between your laptop/desktop and Eddie
 
-What if the data you need is on your local computer, but you need to get it *into* the
+What if the data you need is on your local computer, but you need to get it *into* 
 Eddie? There are also several ways to do this, but it's *always* easier
 to start the transfer locally. **This means if you're typing into a terminal, the terminal
 should not be logged into Eddie, it should be showing your local computer. If you're
 using a transfer program, it needs to be installed on your local machine.**
+
+These directions are platform specific so please follow the instructions for your system:
+
+**Please select the platform you wish to use for the exercises: <select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;"><option value="aws_unix" id="id_aws_unix" selected> UNIX </option><option value="aws_win" id="id_aws_win" selected> Windows </option></select>**
+
 
 <div id="div_aws_unix" style="display:block" markdown="1">
 ## Transferring Data Between your Local Machine and Eddie
@@ -366,11 +371,6 @@ $ scp <username>@eddie3.ecdf.ed.ac.uk:/home/<username>/shell_data/untrimmed_fast
 
 Remember that in both instances, the command is run from your local machine, we've just flipped the order of the to and from parts of the command.
 </div>
-
-These directions are platform specific so please follow the instructions for your system:
-
-**Please select the platform you wish to use for the exercises: <select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;"><option value="aws_unix" id="id_aws_unix" selected> AWS_UNIX </option><option value="aws_win" id="id_aws_win" selected> AWS_Windows </option></select>**
-
 
 <div id="div_aws_win" style="display:block" markdown="1">
 
