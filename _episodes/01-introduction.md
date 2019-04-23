@@ -51,7 +51,7 @@ In this lesson you will learn how to use the command line interface to move arou
 ## How to access the shell
 
 On a Mac or Linux machine, you can access a shell through a program called Terminal, which is already available
-on your computer. If you're using Windows, you'll need to download a separate program to access the shell. On The University's Windows supported desktop, the recommended program is MobaXterm, which is already installed.
+on your computer. If you're using Windows, you'll need to download a separate program to access the shell. On The University's Windows supported desktop, the recommended program is MobaXterm, which is already installed. An alternative program is PuTTY. 
 
 We will spend most of our time learning about the basics of the shell
 by manipulating some experimental data. Some of the data we're going to be working with is quite large, and
@@ -60,14 +60,9 @@ lessons to work with this data. To avoid having to spend time
 downloading the data and downloading and installing all of the software,
 we're going to be working with data on the University's compute cluster, Eddie. 
 
-Some sort of login instructions for Linux, Mac and Windows including username and password...
+Eddie's network address is `eddie3.ecdf.ed.ac.uk`. When logging-in you need to use your University username and password.
 
-Some note of different home directories to prevent us from accidentally changing each other's files as we work through the
-exercises
-
-You can log-in to the remote server using the instructions 
-[here](http://www.datacarpentry.org/cloud-genomics/02-logging-onto-cloud/#logging-onto-a-cloud-instance). 
-Your instructor will supply the `ip_address` and password that you need to login.
+Instructions for logging-in to a remote server are provided at [here](http://www.datacarpentry.org/cloud-genomics/02-logging-onto-cloud/#logging-onto-a-cloud-instance). Note: please user your University username and not `dcuser` when following these instructions. This covers logging-in from Linux, MacOS and Windows with PuTTY. Please ask for help with MobaXterm.
 
 After logging in, you will see a screen showing something like this: 
 
