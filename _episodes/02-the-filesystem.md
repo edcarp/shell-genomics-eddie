@@ -68,7 +68,7 @@ $ pwd
 {: .bash}
 
 ~~~
-/home/dcuser/shell_data
+/home/<username>/shell_data
 ~~~
 {: .output}
 
@@ -226,7 +226,7 @@ $ pwd
 You will see: 
 
 ~~~
-/home/dcuser
+/home/<username>
 ~~~
 {: .output}
 
@@ -240,7 +240,7 @@ directory in `home` which is a directory in `/`.
 Now enter the following command:
 
 ~~~
-$ cd /home/dcuser/shell_data/.hidden
+$ cd /home/<username>/shell_data/.hidden
 ~~~
 {: .bash}
 
