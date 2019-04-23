@@ -153,6 +153,15 @@ $ pwd
 ~~~
 {: .output}
 
+> ## Get files for the lesson
+> 
+> Before we continue, we need to get a copy of the files needed for these lessons. Simply run the following command (cut and paste will help):
+~~~
+$ cp -r /exports/eddie/scratch/shell_data/ .
+~~~
+{: .bash}
+{: .callout}
+
 Let's look at how our file system is organized.  
 
 At the top is our home directory, which holds all our  
@@ -161,9 +170,11 @@ subdirectories and files.
 Inside that directory there is the following:
 
 ~~~
-R  r_data  shell_data
+shell_data
 ~~~
 {: .output}
+
+Note: there may be additional files and directories if you have used Eddie before.
 
 We'll be working within the `shell_data` subdirectory, and creating new subdirectories, throughout this workshop.  
 
