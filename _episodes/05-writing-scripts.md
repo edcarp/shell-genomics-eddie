@@ -351,7 +351,7 @@ $  scp local_file.txt <username>@eddie3.ecdf.ed.ac.uk:/home/<username>/
 
 Let's download a text file from Eddie. You should have a file that contains bad reads called `~/shell_data/scripted_bad_reads.txt`.
 
-**Tip:** If you are looking for another (or any really) text file in your home directory to use instead try
+**Tip:** If you are looking for another (or any really) text file in your home directory to use instead, try
 
 ~~~
 $ find ~ -name *.txt
