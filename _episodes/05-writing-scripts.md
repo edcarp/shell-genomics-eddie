@@ -213,9 +213,9 @@ You will learn more about writing scripts in [a later lesson](http://www.datacar
 
 ## Moving and Downloading Data
 
-So far, we've worked with data that is pre-loaded on the instance in the cloud. Usually, however,
-most analyses begin with moving data onto the instance. Below we'll show you some commands to 
-download data onto your instance, or to move data between your computer and the cloud.
+So far, we've worked with data that is pre-loaded on Eddie. Usually, however,
+most analyses begin with moving data onto Eddie (or another remote cluster or cloud instance). Below we'll show you some commands to 
+download data onto Eddie, or to move data between your computer and Eddie.
 
 ### Getting data from the cloud
 
