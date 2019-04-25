@@ -403,7 +403,7 @@ C:\User\your-pc-username\Downloads> pscp.exe local_file.txt <username>@eddie3.ec
 #### Downloading data from Eddie with PSCP
 
 1. Follow the instructions in the Upload section to download (if needed) and access the *PSCP* program (steps 1-3)
-2. Download the text file using the following command **(make sure you use substitute 'your-pc-username' for your actual pc username and \<username\>@eddie3.ecdf.ed.ac.uk with your remote login credentials)**
+2. Download the text file using the following command **(make sure you use substitute 'your-pc-username' for your actual pc username)**
 
 ~~~
 C:\User\your-pc-username\Downloads> pscp.exe <username>@eddie3.ecdf.ed.ac.uk:/home/<username>/shell_data/untrimmed_fastq/scripted_bad_reads.txt C:\User\your-pc-username\Downloads
