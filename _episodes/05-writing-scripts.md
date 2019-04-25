@@ -333,7 +333,7 @@ $ scp <local file> <Eddie>
 ~~~
 {: .bash}
 
-Copies a file from your local computer to Eddie. To move it back, you just re-order the to and from fields:
+Copies a file from your local computer to Eddie (assuming you've filled in `<local file>` and `<Eddie>` correctly). To move it back, you just re-order the to and from fields:
 
 ~~~
 $ scp <Eddie> <local file>
