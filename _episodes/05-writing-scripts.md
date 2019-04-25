@@ -177,7 +177,7 @@ $ ls -l bad-reads-script.sh
 {: .bash}
 
 ~~~
--rw-rw-r-- 1 dcuser dcuser 0 Oct 25 21:46 bad-reads-script.sh
+-rw-rw-r-- 1 <username> eddie_users 0 Oct 25 21:46 bad-reads-script.sh
 ~~~
 {: .output}
 
@@ -196,7 +196,7 @@ $ ls -l bad-reads-script.sh
 {: .bash}
 
 ~~~
--rwxrwxr-x 1 dcuser dcuser 0 Oct 25 21:46 bad-reads-script.sh
+-rwxrwxr-x 1 <username> eddie_users 0 Oct 25 21:46 bad-reads-script.sh
 ~~~
 {: .output}
 
@@ -343,7 +343,7 @@ $ scp <Eddie> <local file>
 
 #### Uploading Data to Eddie with scp
 
-1. Open the terminal and use the `scp` command to upload a file (e.g. `local_file.txt`) to the dcuser home directory:
+1. Open the terminal and use the `scp` command to upload a file (e.g. `local_file.txt`) to your home directory:
 
 ~~~
 $  scp local_file.txt <username>@eddie3.ecdf.ed.ac.uk:/home/<username>/
@@ -403,7 +403,7 @@ C:\User\your-pc-username\Downloads> pscp.exe local_file.txt <username>@eddie3.ec
 ### Downloading Data from your Virtual Machine with PSCP
 
 1. Follow the instructions in the Upload section to download (if needed) and access the *PSCP* program (steps 1-3)
-2. Download the text file using the following command **(make sure you use substitute 'your-pc-username' for your actual pc username and dcuser@ ip.address with your remote login credentials)**
+2. Download the text file using the following command **(make sure you use substitute 'your-pc-username' for your actual pc username and <username>@eddie3.ecdf.ed.ac.uk with your remote login credentials)**
 
 ~~~
 C:\User\your-pc-username\Downloads> pscp.exe <username>@eddie3.ecdf.ed.ac.uk:/home/<username>/shell_data/untrimmed_fastq/scripted_bad_reads.txt.
