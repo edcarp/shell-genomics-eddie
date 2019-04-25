@@ -314,10 +314,9 @@ These directions are platform specific so please follow the instructions for you
 
 
 <div id="div_aws_unix" style="display:block" markdown="1">
-#### Transferring Data Between your local machine and Eddie
-##### scp
+#### Uploading data to Eddie with scp
 
-`scp` stands for 'secure copy protocol', and is a widely used UNIX tool for moving files
+`scp` stands for 'secure copy protocol', and is a widely used Linux/UNIX tool for moving files
 between computers. The simplest way to use `scp` is to run it in your local terminal,
 and use it to copy a single file:
 
@@ -334,14 +333,12 @@ $ scp <local file> <Eddie>
 ~~~
 {: .bash}
 
-To move it back, you just re-order the to and from fields:
+Copies a file from your local computer to Eddie. To move it back, you just re-order the to and from fields:
 
 ~~~
 $ scp <Eddie> <local file>
 ~~~
 {: .bash}
-
-#### Uploading Data to Eddie with scp
 
 1. Open the terminal and use the `scp` command to upload a file (e.g. `local_file.txt`) to your home directory:
 
@@ -350,7 +347,7 @@ $  scp local_file.txt <username>@eddie3.ecdf.ed.ac.uk:/home/<username>/
 ~~~
 {: .bash}
 
-#### Downloading Data from Eddie with scp
+#### Downloading data from Eddie with scp
 
 Let's download a text file from Eddie. You should have a file that contains bad reads called `~/shell_data/scripted_bad_reads.txt`.
 
