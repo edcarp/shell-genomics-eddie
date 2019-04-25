@@ -314,7 +314,7 @@ These directions are platform specific so please follow the instructions for you
 
 
 <div id="div_aws_unix" style="display:block" markdown="1">
-#### Uploading data to Eddie with scp
+### Uploading data to Eddie with scp
 
 `scp` stands for 'secure copy protocol', and is a widely used Linux/UNIX tool for moving files
 between computers. The simplest way to use `scp` is to run it in your local terminal,
@@ -347,7 +347,7 @@ $  scp local_file.txt <username>@eddie3.ecdf.ed.ac.uk:/home/<username>/
 ~~~
 {: .bash}
 
-#### Downloading data from Eddie with scp
+### Downloading data from Eddie with scp
 
 Let's download a text file from Eddie. You should have a file that contains bad reads called `~/shell_data/scripted_bad_reads.txt`.
 
@@ -362,7 +362,7 @@ $ find ~ -name *.txt
 1. Download the bad reads file in `~/shell_data/scripted_bad_reads.txt` to your home `~/Downloads` directory using the following command:
 
 ~~~
-$ scp <username>@eddie3.ecdf.ed.ac.uk:/home/<username>/shell_data/untrimmed_fastq/scripted_bad_reads.txt. ~/Downloads
+$ scp <username>@eddie3.ecdf.ed.ac.uk:/home/<username>/shell_data/untrimmed_fastq/scripted_bad_reads.txt ~/Downloads
 ~~~
 {: .bash}
 
@@ -372,7 +372,7 @@ Remember that in both instances, the command is run from your local machine, we'
 <div id="div_aws_win" style="display:block" markdown="1">
 
 
-#### Uploading data to Eddie with PSCP
+### Uploading data to Eddie with PSCP
 
 If you're using a PC, we recommend you use the *PSCP* program. This program is from the same suite of
 tools as the PuTTY program we have been using to connect.
@@ -397,7 +397,7 @@ C:\User\your-pc-username\Downloads> pscp.exe local_file.txt <username>@eddie3.ec
 ~~~
 {: .bash}
 
-#### Downloading data from Eddie with PSCP
+### Downloading data from Eddie with PSCP
 
 1. Follow the instructions in the Upload section to download (if needed) and access the *PSCP* program (steps 1-3)
 2. Download the text file using the following command **(make sure you use substitute 'your-pc-username' for your actual pc username)**
