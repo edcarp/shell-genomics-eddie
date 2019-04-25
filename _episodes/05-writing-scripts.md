@@ -211,7 +211,7 @@ The script should run the same way as before, but now we've created our very own
 
 You will learn more about writing scripts in [a later lesson](http://www.datacarpentry.org/wrangling-genomics/02-automating_a_workflow/).
 
-## Moving and Downloading Data
+## Moving and downloading data
 
 So far, we've worked with data that is pre-loaded on Eddie. Usually, however,
 most analyses begin with moving data onto Eddie (or another remote cluster or cloud instance). Below we'll show you some commands to 
@@ -308,14 +308,14 @@ to start the transfer locally. **This means if you're typing into a terminal, th
 should not be logged into Eddie, it should be showing your local computer. If you're
 using a transfer program, it needs to be installed on your local machine.**
 
-These directions are platform specific so please follow the instructions for your system:
+These directions are platform specific so please follow the instructions for your (laptop/desktop) system:
 
-**Please select the platform you wish to use for the exercises: <select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;"><option value="aws_unix" id="id_aws_unix" selected> UNIX </option><option value="aws_win" id="id_aws_win" selected> Windows </option></select>**
+**Please select the platform you wish to use for the exercises: <select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;"><option value="aws_unix" id="id_aws_unix" selected> Linux/UNIX </option><option value="aws_win" id="id_aws_win" selected> Windows </option></select>**
 
 
 <div id="div_aws_unix" style="display:block" markdown="1">
-## Transferring Data Between your Local Machine and Eddie
-### scp
+#### Transferring Data Between your local machine and Eddie
+##### scp
 
 `scp` stands for 'secure copy protocol', and is a widely used UNIX tool for moving files
 between computers. The simplest way to use `scp` is to run it in your local terminal,
@@ -375,10 +375,10 @@ Remember that in both instances, the command is run from your local machine, we'
 <div id="div_aws_win" style="display:block" markdown="1">
 
 
-### Uploading Data to your Virtual Machine with PSCP
+#### Uploading data to Eddie with PSCP
 
 If you're using a PC, we recommend you use the *PSCP* program. This program is from the same suite of
-tools as the putty program we have been using to connect.
+tools as the PuTTY program we have been using to connect.
 
 1. If you haven't done so, download pscp from [http://the.earth.li/~sgtatham/putty/latest/x86/pscp.exe](http://the.earth.li/~sgtatham/putty/latest/x86/pscp.exe)
 2. Make sure the *PSCP* program is somewhere you know on your computer. In this case,
@@ -400,15 +400,13 @@ C:\User\your-pc-username\Downloads> pscp.exe local_file.txt <username>@eddie3.ec
 ~~~
 {: .bash}
 
-### Downloading Data from your Virtual Machine with PSCP
+#### Downloading data from Eddie with PSCP
 
 1. Follow the instructions in the Upload section to download (if needed) and access the *PSCP* program (steps 1-3)
-2. Download the text file using the following command **(make sure you use substitute 'your-pc-username' for your actual pc username and <username>@eddie3.ecdf.ed.ac.uk with your remote login credentials)**
+2. Download the text file using the following command **(make sure you use substitute 'your-pc-username' for your actual pc username and \<username\>@eddie3.ecdf.ed.ac.uk with your remote login credentials)**
 
 ~~~
-C:\User\your-pc-username\Downloads> pscp.exe <username>@eddie3.ecdf.ed.ac.uk:/home/<username>/shell_data/untrimmed_fastq/scripted_bad_reads.txt.
-
-C:\User\your-pc-username\Downloads
+C:\User\your-pc-username\Downloads> pscp.exe <username>@eddie3.ecdf.ed.ac.uk:/home/<username>/shell_data/untrimmed_fastq/scripted_bad_reads.txt C:\User\your-pc-username\Downloads
 ~~~
 {: .bash}
 
