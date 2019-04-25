@@ -70,7 +70,7 @@ The text at the bottom of the screen shows the keyboard shortcuts for performing
 > many programmers use [Emacs](http://www.gnu.org/software/emacs/) or
 > [Vim](http://www.vim.org/) (both of which require more time to learn), 
 > or a graphical editor such as
-> [Gedit](http://projects.gnome.org/gedit/). On Windows, you may wish to
+> [Gedit](http://projects.gnome.org/gedit/) (nedit is an equivalent on Eddie). On Windows, you may wish to
 > use [Notepad++](http://notepad-plus-plus.org/).  Windows also has a built-in
 > editor called `notepad` that can be run from the command line in the same
 > way as `nano` for the purposes of this lesson.  
