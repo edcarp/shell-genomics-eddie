@@ -564,6 +564,17 @@ $ ls -l
 ~~~
 {: .output}
 
+> ## Eddie specific - ACLs
+>
+> The Eddie filesystem actually uses a different form of permissions known as NFS version 4 Access Control Lists (ACLs), which
+> are beyond the scope of this course. However, it is important to know that the `chmod` command can break file system 
+> permissions. General recommendations are: 
+> 1. You can use `chmod` on files in your home directory
+> 2. You should probably not use `chmod` in group spaces (directories that start with `/exports/cmvm/eddie/` and variants for 
+> the other Colleges). This will result in other members of your research group **not** being able to read your files.
+> 3. Never use `chmod`'s recursive option `-R` as this can result in broken permissions on a large number of files.
+{: .callout}
+
 ### Removing
 
 To prove to ourselves that you no longer have the ability to modify this file, try deleting it with the `rm` command.
@@ -600,6 +611,12 @@ $ rm -r backup
 
 This will delete not only the directory, but all files within the directory. If you have write-protected files in the directory, 
 you will be asked whether you want to override your permission settings. 
+
+> ## Eddie specific - snapshots
+>
+> Stuff on snapshots
+{: .callout}
+
 
 > ## Exercise
 >
