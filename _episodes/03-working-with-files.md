@@ -564,12 +564,12 @@ $ ls -l
 ~~~
 {: .output}
 
-> ## Eddie specific - ACLs
+> ## Eddie specific information - ACLs
 >
 > The Eddie filesystem actually uses a different form of permissions known as NFS version 4 Access Control Lists (ACLs), which
 > are beyond the scope of this course. However, it is important to know that the `chmod` command can break file system 
-> permissions. General recommendations are: 
-> 1. You can use `chmod` on files in your home directory
+> permissions. Our general recommendations are: 
+> 1. You can use `chmod` on files in your home directory.
 > 2. You should probably not use `chmod` in group spaces (directories that start with `/exports/cmvm/eddie/` and variants for 
 > the other Colleges). This will result in other members of your research group **not** being able to read your files.
 > 3. Never use `chmod`'s recursive option `-R` as this can result in broken permissions on a large number of files.
@@ -612,9 +612,12 @@ $ rm -r backup
 This will delete not only the directory, but all files within the directory. If you have write-protected files in the directory, 
 you will be asked whether you want to override your permission settings. 
 
-> ## Eddie specific - snapshots
+> ## Eddie specific information - snapshots
 >
-> Stuff on snapshots
+> The Eddie filesystems take daily snapshots of all files for approximately two weeks. That means you can restore a file if it 
+> has existed for at least 24 hours. You can also access previous versions of a file. Snapshots are kept in 
+> `/exports/.snapshots` where you will find a directory named with the date and time of the snapshot. For example to access 
+> files in your home directory from 10 April 2019 use `/exports/.snapshots/@GMT-2019.04.10-08.29.11/eddie3_homes_local/<username>`.
 {: .callout}
 
 
