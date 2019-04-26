@@ -155,9 +155,9 @@ $ pwd
 
 > ## Get files for the lesson
 > 
-> Before we continue, we need to get a copy of the files needed for these lessons. Simply run the following command (cut and paste will help):
+> Before we continue, we need to setup a few things, like getting the files needed for these lessons. Simply run the following command (cut and paste may help):
 ~~~
-$ cp -r /exports/eddie/scratch/shell_data/ .
+$ source /exports/eddie/scratch/genomics-setup.sh
 ~~~
 {: .bash}
 {: .callout}
