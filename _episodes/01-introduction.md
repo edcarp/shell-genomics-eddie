@@ -62,7 +62,7 @@ we're going to be working with data on the University's compute cluster, Eddie.
 
 Eddie's network address is `eddie3.ecdf.ed.ac.uk`. When logging-in you need to use your University username and password.
 
-Instructions for logging-in to a remote server are provided at [here](http://www.datacarpentry.org/cloud-genomics/02-logging-onto-cloud/#logging-onto-a-cloud-instance). Note: please user your University username and not `dcuser` when following these instructions. This covers logging-in from Linux, MacOS and Windows with PuTTY. Please ask for help with MobaXterm.
+Instructions for logging-in to a remote server are provided at [here](http://www.datacarpentry.org/cloud-genomics/02-logging-onto-cloud/#logging-onto-a-cloud-instance). Note: please use your University username and not `dcuser` when following these instructions. This covers logging-in from Linux, MacOS and Windows with PuTTY. Please ask for help with MobaXterm.
 
 After logging in, you will see a screen showing something like this: 
 
