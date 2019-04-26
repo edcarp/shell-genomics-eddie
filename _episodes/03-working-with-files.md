@@ -614,9 +614,10 @@ you will be asked whether you want to override your permission settings.
 
 > ## Eddie specific information - snapshots
 >
-> The Eddie filesystems take daily snapshots of all files for approximately two weeks. That means you can restore a file if it 
-> has existed for at least 24 hours. You can also access previous versions of a file. Snapshots are kept in 
-> `/exports/.snapshots` where you will find a directory named with the date and time of the snapshot. For example to access 
+> The Eddie filesystem takes daily snapshots of all files (and keeps them for approximately 14 working days). That means you  
+> can restore a deleted file if it 
+> has existed for at least 24 hours. You can also access previous versions of a file from up to 14 working days ago. Snapshots are kept in 
+> `/exports/.snapshots` where you will find a directories named with the date and time of the snapshot. For example to access 
 > files in your home directory from 10 April 2019 use `/exports/.snapshots/@GMT-2019.04.10-08.29.11/eddie3_homes_local/<username>`.
 {: .callout}
 
