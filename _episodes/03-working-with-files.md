@@ -567,8 +567,8 @@ $ ls -l
 > ## Eddie specific information - ACLs
 >
 > The Eddie filesystem actually uses a different form of permissions known as NFS version 4 Access Control Lists (ACLs), which
-> are beyond the scope of this course. However, it is important to know that the `chmod` command can break file system 
-> permissions. Our general recommendations are: 
+are beyond the scope of this course. However, it is important to know that the `chmod` command can break file system 
+permissions. Our general recommendations are: 
 > 1. You can use `chmod` on files in your home directory.
 > 2. You should probably not use `chmod` in group spaces (directories that start with `/exports/cmvm/eddie/` and variants for 
 > the other Colleges). This will result in other members of your research group **not** being able to read your files.
@@ -614,11 +614,9 @@ you will be asked whether you want to override your permission settings.
 
 > ## Eddie specific information - snapshots
 >
-> The Eddie filesystem takes daily snapshots of all files (and keeps them for approximately 14 working days). That means you  
-> can restore a deleted file if it 
-> has existed for at least 24 hours. You can also access previous versions of a file from up to 14 working days ago. Snapshots are kept in 
-> `/exports/.snapshots` where you will find a directories named with the date and time of the snapshot. For example to access 
-> files in your home directory from 10 April 2019 use `/exports/.snapshots/@GMT-2019.04.10-08.29.11/eddie3_homes_local/<username>`.
+> The Eddie filesystem takes daily snapshots of all files (and keeps them for approximately 14 working days). That means you can restore a deleted file if it has existed for at least 24 hours. You can also access previous versions of a file from up to 14 working days ago. 
+>
+> Snapshots are kept in `/exports/.snapshots` where you will find a directories named with the date and time of the snapshot. For example to access files in your home directory from 10 April 2019 use `/exports/.snapshots/@GMT-2019.04.10-08.29.11/eddie3_homes_local/<username>`.
 {: .callout}
 
 
