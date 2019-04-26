@@ -3,6 +3,8 @@
 
 # Shell Genomics lessons
 
+Note: this is a fork of the Data Carpentry's material, but adapted to run on the University of Edinburgh's Eddie cluster.
+
 An introduction to the Unix shell for people working with genomics data. This lesson is part of the [Data Carpentry Genomics Workshop](http://www.datacarpentry.org/genomics-workshop/). Please see http://www.datacarpentry.org/shell-genomics/ for a rendered version of this material.
 
 ## Contribution
