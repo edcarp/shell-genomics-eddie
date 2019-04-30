@@ -116,7 +116,7 @@ CNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
 
 `grep` allowed us to identify sequences in our FASTQ files that match a particular pattern. 
 All of these sequences were printed to our terminal screen, but in order to work with these 
-sequences and perform other opperations on them, we will need to capture that output in some
+sequences and perform other operations on them, we will need to capture that output in some
 way. 
 
 We can do this with something called "redirection". The idea is that
