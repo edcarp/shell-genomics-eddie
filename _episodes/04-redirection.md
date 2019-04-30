@@ -281,7 +281,7 @@ $ wc -l bad_reads.txt
 > would give us a warning. 
 > 
 > ~~~
-> grep -B1 -A2 NNNNNNNNNN *.fastq > bad_reads.fastq
+> $ grep -B1 -A2 NNNNNNNNNN *.fastq > bad_reads.fastq
 > ~~~
 > {: .bash}
 > 
