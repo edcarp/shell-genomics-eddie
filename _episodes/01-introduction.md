@@ -248,8 +248,8 @@ to quit.
 > > 
 > > ~~~
 > > total 8
-> > drwxr-x--- 2 dcuser dcuser 4096 Jul 30  2015 sra_metadata
-> > drwxr-xr-x 2 dcuser dcuser 4096 Nov 15  2017 untrimmed_fastq
+> > drwxr-x--- 2 <username> eddie_users 4096 Jul 30  2015 sra_metadata
+> > drwxr-xr-x 2 <username> eddie_users 4096 Nov 15  2017 untrimmed_fastq
 > > ~~~
 > > {: .output}
 > > 
